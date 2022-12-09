@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+      function maskAllExcept(div) {
+        document.body.appendChild(iframe);
+      }
+
+      let navMenu = document.getElementsByClassName("side-bar")[0];
+      let menuButton = document.getElementsByClassName("menu")[0];
+      let menuCloseButton = document.getElementsByClassName("menu-close")[0];
+
+      menuButton.onclick = (event) =>  {
+        navMenu.classList.remove("hidden");
+      }
+      menuCloseButton.onclick = (event) => navMenu.classList.add("hidden");
+    })
+  </script>
+  
+  <title>Frontend Mentor | News homepage</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="/assets/index.005085d9.css">
+</head>
+<body style="font-family: 'Inter', sans-serif;">
+
+  <nav class="flex justify-end sm:hidden">
+    <img class="w-10 mx-3 my-8" src="/assets/logo.2ae3d696.svg" alt="loog">
+
+      <div class="fixed hidden w-72 h-[100%] bg-[#fffdfa] side-bar">
+      <img class="mx-4 my-7 ml-auto menu-close" src="/assets/icon-menu-close.018fbc42.svg" alt="">
+      <ul class="flex flex-col justify-between mt-20 mx-5 text-xl h-60">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+      </div>
+
+    <img class="ml-auto mr-3 h-4 my-auto menu" src="/assets/icon-menu.09147dcd.svg" alt="menu">
+  </nav>
+  <nav class="hidden items-center py-10 px-20 sm:flex">
+    <img class="w-10 mx-3" src="/assets/logo.2ae3d696.svg" alt="loog">
+      <ul class="flex text-xl w-[50%] items-center justify-between ml-auto">
+        <li class="hover:text-[#f15d50]">Home</li>
+        <li class="hover:text-[#f15d50]">New</li>
+        <li class="hover:text-[#f15d50]">Popular</li>
+        <li class="hover:text-[#f15d50]">Trending</li>
+        <li class="hover:text-[#f15d50]">Categories</li>
+      </ul>
+
+  </nav>
+
+  <div class="sm:flex sm:justify-between sm:align-top sm:px-20">
+  <div class="mx-3 sm:w-[64%]">
+    <img src="/assets/image-web-3-desktop.80273c80.jpg" class="hidden sm:inline-block" alt="">
+    <img src="/assets/image-web-3-mobile.83b3ba87.jpg" class="sm:hidden" alt="">
+    <div class="sm:flex sm:mt-10">
+  <h1 class="text-5xl font-extrabold w-80 my-5 text-[#00001a]">
+      The Bright Future of Web 3.0?
+    </h1>
+    <div class="flex flex-col justify-between sm:px-10">
+      <p class="text mx-1 font-[400] tracking-wide text-gray-700 w-96">
+      We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+      But is it really fulfilling its promise?
+      </p>  
+      <div class="my-16 py-4 w-48 text-center tracking-[0.25em] bg-[#f15d50] sm:hover:bg-black text-white font-bold text-sm sm:mx-0 sm:my-0">
+      READ MORE
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+  <div class="flex-col mx-3 my-4 bg-[#00001a] px-7 py-5 sm:w-[33%] sm:my-0 sm:mx-0">
+    <h1 class="text-[#e9ab53] text-3xl font-[700] pt-2">New</h1>
+
+    <h2 class="text-white text-2xl font-[700] mt-7 sm:hover:text-[#e9ab53]">Hydrogen VS Electric Cars</h2>
+    <p class="text-[#5d5f79] font-[400] my-2 text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    
+    <hr class="my-8">
+
+    <h2 class="text-white text-2xl font-[700] mt-7 sm:hover:text-[#e9ab53]">The Downsides of AI Artistry</h2>
+    <p class="text-[#5d5f79] font-[400] my-2 text">What are the possible adverse effects of on-demand AI image generation?</p>  
+
+    <hr class="my-8">
+
+    <h2 class="text-white text-2xl font-[700] mt-7 sm:hover:text-[#e9ab53]">Is VC Funding Drying Up?</h2>
+    <p class="text-[#5d5f79] font-[400] my-2 text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+  </div>
+
+  </div>
+
+  <div class="my-6 mx-3 sm:flex sm:px-20 sm:justify-between sm:my-0">
+  <div class="my-8 flex justify-start">
+    <img class="w-24" src="/assets/image-retro-pcs.f5b001aa.jpg" alt="">
+    <div class="px-4 py-1">
+    <h1 class="text-3xl font-bold text-gray-400">01</h1>
+    <h2 class="font-[800] my-2 sm:hover:text-[#f15d50]">Reviving Retro PCs</h2>
+    <p class="text-gray-500 font-[400]">What happens when old PCs are given modern upgrades?</p>
+    </div>
+  </div>
+
+  <div class="my-8 flex justify-start">
+    <img class="w-24" src="/assets/image-top-laptops.bc1cbac8.jpg" alt="">
+    <div class="px-4 py-1">
+    <h1 class="text-3xl font-bold text-gray-400">02</h1>
+    <h2 class="font-[800] my-2 sm:hover:text-[#f15d50]">Top 10 Laptops of 2022</h2>
+    <p class="text-gray-500 font-[400]">Our best picks for various needs and budgets.</p>
+    </div>
+  </div>
+  <div class="my-8 flex justify-start">
+    <img class="w-24" src="/assets/image-gaming-growth.77ea9e27.jpg" alt="">
+    <div class="px-4 py-1">
+    <h1 class="text-3xl font-bold text-gray-400">03</h1>
+    <h2 class="font-[800] my-2 sm:hover:text-[#f15d50]">The Growth of Gaming</h2>
+    <p class="text-gray-500 font-[400]">How the pandemic has sparked fresh opportunities.</p>
+    </div>
+  </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/veryshyjelly">Ayush Biswas</a>.
+  </div>
+</body>
+</html>
